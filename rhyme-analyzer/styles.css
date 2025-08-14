@@ -1,0 +1,38 @@
+/* Rhyme Analyzer styles */
+.rhyme-pane-header {
+  display:flex; gap:8px; align-items:center; padding:8px 8px 0 8px;
+}
+.rhyme-btn, .rhyme-btn-secondary {
+  padding:4px 10px; border-radius:8px; border:1px solid var(--background-modifier-border);
+  background: var(--interactive-normal); color: var(--text-normal); cursor:pointer;
+}
+.rhyme-btn-secondary { opacity:0.9; }
+.rhyme-btn:hover, .rhyme-btn-secondary:hover { background: var(--interactive-hover); }
+.rhyme-legend { margin-left:auto; font-size:12px; opacity:0.8; }
+
+.rhyme-pane-body { padding:8px; }
+
+.rhyme-scheme { margin:6px 0 12px 0; font-weight:600; opacity:0.9; }
+
+.rhyme-groups-wrap { display:flex; flex-direction:column; gap:8px; }
+.rhyme-group { border:1px solid var(--background-modifier-border); border-radius:12px; padding:8px; }
+.rhyme-group-title { font-size:12px; opacity:0.8; margin-bottom:4px; }
+.rhyme-chip-row { display:flex; flex-wrap:wrap; gap:6px; }
+.rhyme-chip {
+  padding:3px 8px; border-radius:999px; background: var(--tag-background);
+  color: var(--tag-color); border: 1px solid var(--tag-border-color);
+  font-size:12px;
+}
+
+.assonance-wrap { margin-top:12px; }
+.assonance-title { font-weight:600; opacity:0.9; margin-bottom:4px; }
+.assonance-row { margin:4px 0; display:flex; gap:6px; align-items:center; }
+.assonance-label { font-size:12px; opacity:0.7; }
+.assonance-chip { font-size:12px; opacity:0.85; }
+
+@media (prefers-contrast: more){
+  .rhyme-chip { border-color: var(--text-normal); }
+}
+@media (prefers-reduced-motion: reduce){
+  .rhyme-chip, .rhyme-btn, .rhyme-btn-secondary { transition: none; }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "rhyme-analyzer",
+  "name": "Rhyme Analyzer",
+  "version": "0.2.0",
+  "minAppVersion": "1.5.8",
+  "description": "Fast, in-vault rhyme/assonance analyzer with live update, grouping, and export.",
+  "author": "Adam Knoesen + ChatGPT",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
